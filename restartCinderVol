@@ -1,0 +1,4 @@
+for service in api scheduler volume;
+do
+systemctl restart openstack-cinder-$service
+done
